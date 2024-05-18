@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contest</title>
+
+  <!---custom css link-->
+  <link rel="stylesheet" type="text/css" href="contest.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="compiler"><iframe src="https://www.online-ide.com " style="height:800px; width:800px" ; border="none" ; scrolling="yes" ;
+      title="ide"; ></iframe></div>
+ </div>
+  <div class="problem">
+    <h2 style="color:  #99ccff">Problem Statement :<br>Duplicate Words</h2>
+    <p>
+      In this challenge, we use regular expressions (RegEx) to remove instances of words that are repeated more than once, but retain the first occurrence of any case-insensitive repeated word. For example, the words love and to are repeated in the sentence I love Love to To tO code. Can you complete the code in the editor so it will turn I love Love to To tO code into I love to code?
+To solve this challenge, complete the following three lines:
+Write a RegEx that will match any repeated word.
+Complete the second compile argument so that the compiled RegEx is case-insensitive.
+Write the two necessary arguments for replaceAll such that each repeated word is replaced with the very first instance the word found in the sentence. It must be the exact first occurrence of the word, as the expected output is case-sensitive.
+    </p>
+    
+    <h3>Input Format:</h3>
+    <p>
+      The following input is handled for you the given stub code:
+The first line contains an integer, , denoting the number of sentences.
+Each of the  subsequent lines contains a single sentence consisting of English alphabetic letters and whitespace characters.
+    </p>
+    
+    <h3>Constarints:</h3>
+    <p>Each sentence consists of at most  10^4 English alphabetic letters and whitespaces.<br> 1<=n<=100
+</p>
+      
+      <h3>Output Format:</h3>
+      <p>Stub code in the editor prints the sentence modified by the replaceAll line to stdout. The modified string must be a modified version of the initial sentence where all repeat occurrences of each word are removed.</p>
+      
+      <h3>Sample Input:</h3>
+      <p>5
+      Goodbye bye bye world world world<br>
+      Sam went went to to to his business<br>
+      Reya is is the the best player in eye eye game<br>
+      in inthe<br>
+      Hello hello Ab aB<br></p>
+      
+      <h3>Sample Output:</h3>
+      <p>
+        Goodbye bye world<br>
+        Sam went to his business<br>
+        Reya is the best player in eye game<br>
+        in inthe<br>
+        Hello Ab<br>
+        
+      </p>
+  
+     </div>
+
+</body>

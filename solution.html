@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Video Playlist Tutorial</title>
+
+   <!-- custom css file link  -->
+   <!-- <link rel="stylesheet" href="solution.css"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+  list-style:none;
+  
+}
+
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* variables */
+
+:root{
+    /* font */
+    --font: 'Poppins', sans-serif;
+
+    /* colors */
+
+    --color: #9176FF;
+    --bg-color: #f4f4f4;
+}
+
+
+header
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(247, 241, 241);
+    font-family: 'Permanent Marker', cursive;
+}
+.navlist{
+    display: flex;/*text in straight line ,home ,contact us */
+}
+.navlist a{
+    color:white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+     border-bottom: 2px solid transparent; /*for white line under the home,contact us,.. */
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom:2px solid white;
+}
+
+
+body{
+   background-color: rgb(38, 63, 107);
+   padding:20px;
+    background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+}
+
+.container{
+   max-width: 1200px;
+   margin:100px auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap:20px;
+  
+}
+
+.container .main-video-container{
+   flex:1 1 700px;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.container .main-video-container .main-video{
+   margin-bottom: 7px;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.container .main-video-container .main-vid-title{
+   font-size: 20px;
+   color:#444;
+}
+
+.container .video-list-container{
+   flex:1 1 350px;
+   height: 485px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.container .video-list-container::-webkit-scrollbar{
+   width: 10px;
+}
+
+.container .video-list-container::-webkit-scrollbar-track{
+   background-color: #fff;
+   border-radius: 5px;
+}
+
+.container .video-list-container::-webkit-scrollbar-thumb{
+   background-color: #444;
+   border-radius: 5px;
+}
+
+.container .video-list-container .list{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   padding:10px;
+   background-color: #eee;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.container .video-list-container .list:last-child{
+   margin-bottom: 0;
+}
+
+.container .video-list-container .list.active{
+   background-color: #444;
+}
+
+.container .video-list-container .list.active .list-title{
+   color:#fff;
+}
+
+.container .video-list-container .list .list-video{
+   width: 100px;
+   border-radius: 5px;
+}
+
+.container .video-list-container .list .list-title{
+   font-size: 17px;
+   color:#444;
+}
+
+
+@media (max-width:1200px){
+
+   .container{
+      margin:0;
+   }
+
+}
+
+@media (max-width:450px){
+
+   .container .main-video-container .main-vid-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .container .video-list-container .list{
+      flex-flow: column;
+      gap:10px;
+   }
+
+   .container .video-list-container .list .list-video{
+      width: 100%;
+   }
+
+   .container .video-list-container .list .list-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+}
+  </style>
+</head>
+<body>
+
+
+
+    <header>
+        <a href="#" class="logo">LEARNX</a>
+
+
+        <ul class="navlist">
+           
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="contactus1.html">CONTACT US</a></li>
+        </ul>
+
+      
+    </header>  
+
+   
+<div class="container">
+
+   <div class="main-video-container">
+      <video src="ConditionalProbability.mp4" loop controls class="main-video"></video>
+      <h3 class="main-vid-title">Conditional Probability</h3>
+   </div>
+
+   <div class="video-list-container">
+
+      <div class="list active">
+         <video src="ConditionalProbability.mp4" class="list-video"></video>
+         <h3 class="list-title">ConditionalProbability</h3>
+      </div>
+
+      <div class="list">
+         <video src="probability.mp4" class="list-video"></video>
+         <h3 class="list-title">probability</h3>
+      </div>
+
+      <div class="list">
+         <video src="FuelConsumption.mp4" class="list-video"></video>
+         <h3 class="list-title">Fuel Consumption</h3>
+      </div>
+
+      <div class="list">
+         <video src=" quadraticequations.mp4" class="list-video"></video>
+         <h3 class="list-title"> quadratic equations</h3>
+      </div>
+ 
+      <div class="list">
+         <video src="SurfaceAreaTrick.mp4" class="list-video"></video>
+         <h3 class="list-title">Surface Area Trick</h3>
+      </div>
+
+      
+
+   </div>
+
+</div>
+
+
+<!-- custom js file link  -->
+<script src="solution.js"></script>
+
+</body>
+</html>

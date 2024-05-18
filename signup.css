@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+
+  /* background-image: url(background.jpg); */
+  font-family: 'Permanent Marker', cursive;
+  background-size: cover;
+ 
+}
+.logo{
+  
+  width:0%;
+  height:1%;
+  color:white;
+  margin-left:80px;
+  
+}
+
+.container {
+
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transition: width 2s, height 2s, transform 2s;
+}
+/* .container:hover{
+  width: 30%;
+  height:40%;
+} */
+
+.container h2 {
+  display: inline-block;
+  border-bottom: 2px solid;
+  /* border-image: linear-gradient(to right, #FF00FF, #00FFFF) 1; */
+  border-image-slice: 1;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+
+}
+
+.box {
+  width: 100%;
+  margin: 32px 0;
+  border-bottom: 2px solid;
+  /* border-image: linear-gradient(to right, #FF00FF, #00FFFF) 1;
+  border-image-slice: 1; */
+}
+
+.box input {
+  background: none;
+  width: 75%;
+  margin: 12px 0;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.but {
+  color: white;
+  cursor: pointer;
+  outline: none;
+  width: 30%;
+  margin: 12px 0;
+  padding: 6px;
+  margin-left:40px;
+  border: 2px solid;
+  /* border-image: linear-gradient(to right, #FF00FF, #00FFFF) 1;
+  border-image-slice: 1; */
+  border-radius: 10px;
+  font-size: 18px;
+  background: none;
+  text-align: center;
+}
+
+/* .but:hover {
+  opacity: 0.75;
+  color: linear-gradient(to right, #FF00FF, #00FFFF) 1;
+  background-color: white;
+} */
+
+.but:hover {
+  opacity: .9;
+  /* background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673); */
+  background-color: white;
+  color:black;
+}
+
+.formerror {
+  color: red;
+}

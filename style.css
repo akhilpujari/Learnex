@@ -1,0 +1,142 @@
+
+
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+.logo{
+  /* width:0%;
+  height:30px; */
+  margin-left:10%;
+  color:white;
+}
+
+body{
+  width:100%;
+  height:100%;
+   background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* a:active{
+   border-bottom:2px solid white;
+
+} */
+nav{
+  width:85%;
+  height:0px;
+  line-height:30px;
+  padding:0px 75px;
+  position: relative;
+ margin-top: 0px;
+}
+nav ul{
+  margin-top:0px;
+  float:right;
+  margin-right:5%;
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+  
+}
+ nav li a{
+   font-size: 20px;
+   padding:0px 25px;
+   color:white;
+   text-decoration: none;
+  
+ }
+nav li a:hover{
+ border-bottom:2px solid white;
+    /* transition:all 0.4s ease 0s; */
+}
+
+.login_container{
+    position: relative;
+    width:400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    /* background: #040717; */
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left:500px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.loginform{
+    position: absolute;
+    content: '';
+    /* background-color: #0c1022; */
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: white;
+
+} 
+.input_group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+
+}
+
+::placeholder{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.btn{
+  color: white;
+  cursor: pointer;
+  outline: none;
+  width: 30%;
+  margin: 12px 0;
+  padding: 6px;
+  margin-top:30px;
+  margin-bottom:20px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-size: 18px;
+  background: none;
+  text-align: center;
+}
+.btn:hover {
+  opacity: .9;
+  /* background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673); */
+  background-color: white;
+  color:black;
+}
+.signup{
+  color:white;
+}
+.forgotp{
+  margin-right:20px;
+}
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider |Dev Mode</title>
+
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="gkcontent.css"> -->
+   <style>
+     /* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #4f1bb8;
+ 
+  /* --bg-color: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%) ; */
+}
+
+/* ------------ BASE ------------ */
+
+
+
+
+
+
+
+*{
+  padding:0;                                    
+  margin:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  List-style:none;
+  text-decoration:none;
+}
+header
+{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+.navlist{
+  display: flex;/*text in straight line ,home ,contact us */
+}
+.navlist a{
+  color:white;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 600;
+   border-bottom: 2px solid transparent; /*for white line under the home,contact us,.. */
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom:2px solid white;
+}
+.banner{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 30px 50px 30px;
+}
+
+
+
+
+
+
+
+
+body{
+    background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* background-color: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);  */
+} 
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: var(--color);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.card__btn{
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+}
+   </style>
+    
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">LEARNX</a>
+
+    <ul class="navlist">
+       
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li><a href="contactus1.html">CONTACT US</a></li>
+    </ul>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+</header>  
+
+
+
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="https://cdn.xxl.thumbs.canstockphoto.com/seamless-pattern-of-science-education-background
+          -science-research-and-education-background-design-eps-vectors_csp38392634.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Math and Science</span>
+          
+          <p class="card__text">Math and science education provides a framework 
+            for how to find answers. Math models phenomena and relationships in
+             our observable environment, while articulating concepts from the 
+             intuitive to the obscure.</p>
+          
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Technology</span>
+          
+          <p class="card__text">Every industry needs tech to survive and many 
+            of them are growing exponentially. Knowing the basic tech skills can
+             help you troubleshoot problems, save yourself money, and can secure 
+             your career in the future.</p>
+          
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="https://cdn.firstcry.com/education/2022/06/03135202/Interesting-GK-Questions-On-Animals-With-Answers-For-Class-1-2-and-3-Kids.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title"> Plants and Animals</span>
+          
+          <p class="card__text">Both plants and animals are essential for the 
+            continuity of human life. Therefore, humans as a biological species exist
+             in symbiotic relations with both plants and animals..</p>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="https://cdn.w600.comps.canstockphoto.com/cargo-transportation-blue-vector-clipart_csp4187520.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Transport</span>
+          
+          <p class="card__text">Transportation ensures extending of trade and network.
+            The improvement and reforms in the transport sector enhance the dynamicity 
+            of freight and passengers in a region.
+            </p>
+        </div>
+      </div>
+
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="https://img.jagranjosh.com/imported/images/E/Articles/CHSLSSCGeneralAwarenessImportantTopics2019.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Geography</span>
+         
+          <p class="card__text">Geography helps us to explore and understand space
+             and place - recognising the great differences in cultures, political systems, 
+             economies, landscapes and environments across the world, and exploring the links
+              between them.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>

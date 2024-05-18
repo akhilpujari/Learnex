@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider |Dev Mode</title>
+
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    /* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #4f1bb8;
+ 
+  /* --bg-color: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%) ; */
+}
+
+/* ------------ BASE ------------ */
+*{
+  padding:0;                                    
+  margin:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  List-style:none;
+  text-decoration:none;
+}
+header
+{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color:white;
+  font-family: 'Permanent Marker', cursive;
+}
+.navlist{
+  display: flex;/*text in straight line ,home ,contact us */
+}
+.navlist a{
+  color:white;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 600;
+   border-bottom: 2px solid transparent; /*for white line under the home,contact us,.. */
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom:2px solid white;
+}
+.banner{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 30px 50px 30px;
+}
+
+body{
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+     background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+ 
+} 
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: var(--color);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.card__btn{
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+}
+  </style>
+    
+</head>
+<body>
+<header>
+    <a href="#" class="logo">LEARNX</a>
+
+    <ul class="navlist">
+       
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+</header>  
+
+
+
+  <section class="swiper mySwiper">
+  <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="I3.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Employ active listening</span>
+          
+          <p class="card__text">Listening is as essential as speaking 
+            during conversations because it demonstrates a genuine
+             interest in the other speaker and guarantees you understand
+              their needs. As a result, you will find it easier to build 
+              rapport and relationships.</p>
+          
+        </div>
+      </div>
+    <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="I4.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Speak with confidence</span>
+          
+          <p class="card__text">Confidence is crucial because if you sound 
+            
+          like you do not believe in what you are saying, neither will your
+           audience. When people trust you they feel more interested in listening to you.</p>
+          
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+         <div class="card__image">
+          <img src="I1.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title"> Pay attention to your body language</span>
+          
+          <p class="card__text">Your body language can affect how you deliver messages despite
+             it being a nonverbal method of communication. 
+            Maintaining eye contact and having relaxed body language.</p>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="I2.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title"> Understand your audience</span>
+          
+          <p class="card__text">To effectively communicate messages, you need to
+             understand 
+            your audience and put yourself in their position. Not everyone has the same knowledge
+            
+            or background as you.
+            </p>
+             </div>
+      </div>
+
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="I5.jpeg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Think before speaking</span>
+         
+          <p class="card__text">People often feel uncomfortable with silence, but pausing before 
+            answering a question can improve your response. Taking time to reflect allows you to
+             organize your thoughts into a concise, clear statement.</p>
+        </div>
+      </div>
+      </div>
+  </section>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>

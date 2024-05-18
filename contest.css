@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+   background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.container{
+  
+display:flex;
+float:right;
+}
+
+
+.problem{
+  color:white;
+  padding-left: 10px;
+}

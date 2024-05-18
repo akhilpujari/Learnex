@@ -1,0 +1,96 @@
+
+body{
+   background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  font-family: 'Permanent Marker', cursive;
+  margin-top:30px;
+}
+
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar{
+  
+}
+
+.navdiv{
+  display:flex; align-items:center; justify-content:space-between;
+}
+
+.logo{
+  font-size:35px;
+  font-weight:bold;
+  color:white;
+  margin-left:20px;
+}
+
+
+.coursesunder{
+  text-decoration: underline ;
+  text-decoration-color: white;
+}
+
+li{
+  list-style: none; display:inline-block;
+
+}
+li a{
+  color:white; font-size:20px;font-weight:bold; margin-right: 100px;
+  
+}
+.list a:hover{
+    border-bottom:2px solid white;
+}
+
+.flex-container{
+  display: flex;
+  margin-left:250px;
+
+  margin-top:50px;
+    /* border: 2px solid white; */
+ width:66%;
+  flex-wrap:wrap;
+  
+}
+  
+.flex-box{
+  width:200px;
+  height:200px;
+  /* background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 35%, rgba(0,212,255,1) 100%); */
+  background:linear-gradient(to right, #2c3e50, #4ca1af);
+  color:white;
+  text-align:center;
+  line-height:200px;
+  border-radius:30px;
+  margin:10px;
+  border:1px dotted white;
+ cursor:pointer;
+
+ 
+}
+.flex-container .flex-box a{
+  list-style: none;
+  text-decoration: none;
+   color:white;
+}
+ .flex-box:hover{
+  transform:translate(-5px,-10px);
+   
+}
+.flex-container .flex-box a:hover{
+  border-bottom:2px solid white;
+  border-spacing: 6px;;
+}
+
+h4{
+  color:lightblue;
+}
+
+/* h3{
+  padding:6px; */
+  /* padding-right:60%;
+  border-bottom:2px solid white;
+
+} */

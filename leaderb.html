@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+
+    <style>
+     *{
+       list-style: none;
+       font-family: 'Permanent Marker', cursive;
+       margin:0;
+       padding:0;
+       box-sizing:border-box;
+    
+
+     }
+
+      body{
+         background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);    
+      }
+      .wrapper{
+        width:100%;
+        height:100%;
+      }
+
+      .lboard_section{
+        width:520px;
+        height:520px;
+        margin:100px auto 0;
+        background:transparent;
+        border-radius:5px ;
+        border: 1px dashed white;
+        padding: 25px 40px;
+        position:realtive;
+      }
+
+     
+      .lboard_section h3{
+        margin-right: 50px;
+        cursor:pointer;
+      }
+
+    /* .lboard_section .lboard_tabs h3: hover,
+     .lboard_section .lboard
+      _tabs h3.active{
+       color:white;
+     }  */
+
+      .lboard_wrap{
+        position: absolute;
+        /* margin-left:130px; */
+        /* margin-top:40px; */
+         top:120px;
+        left:400px; 
+        /* background: background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);     */
+        border-radius: 5px;
+        width:530px;
+        height:485px;
+        
+      }
+
+      .lboard_wrap .lboard_item{
+        padding:25px;
+        
+      }
+
+      .lboard_wrap .lboard_item .lboard_mem{
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        padding: 15px 0;
+        border-bottom: 1px solid grey;
+      }
+
+       .lboard_wrap .lboard_item .lboard_mem : first-child{
+         width:50px;
+         
+       }
+       .lboard_wrap .lboard_item .lboard_mem : last-child{
+         border-bottom: 0;
+         padding-bottom: 0;
+       }
+       .lboard_wrap .lboard_mem .img{
+         width:50px;
+         
+       }
+
+      .lboard_wrap .lboard_mem .img img{
+        display:block;
+        width:100%;
+       
+      }
+
+      .lboard_wrap .lboard_mem .name_bar{
+           margin:0 20px;
+            width:clac(100% -50px);
+         }
+
+       .lboard_wrap .lboard_mem .name_bar p{
+         color:white;
+       }
+
+       .lboard_wrap .lboard_mem .name_bar p span{
+         margin-right: 5px;
+       }
+
+       .lboard_wrap .lboard_item .points{
+         width:100px;
+         color:white;
+       }
+/* 
+       .lboard_wrap .lboard_item .bar_wrap{
+         height:5px;
+         width:100%;
+         background: #d5b000;
+         margin-top: 10px;
+       } */
+    </style>
+   </head>
+
+  
+  <body>
+
+  
+    <!-- <h1 style="color:white; ">LEARNX</h1>
+   -->
+  <div class="wrapper">
+    <div class="lboard_section">
+      <div class="lboard_tabs">
+        <h3 style="color:white">Today</h3>
+      </div>
+    </div>
+    <div class="lboard_wrap">
+      <div class="lboard_item">
+        <div class="lboard_mem">
+            <div class="img">
+                    <h4 style="color:  #3a3d51">Profile</h4>
+            </div>
+           <div class="name_bar">
+             <p> <span>Sno.</span>USERNAME</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:80% "></div>
+             </div>
+           </div>
+           <div class="points">POINTS</div>
+         </div>
+         <div class="lboard_mem">
+            <div class="img">
+                <img src="p1.jpg" alt="picture_1">
+            </div>
+           <div class="name_bar">
+             <p> <span>1.</span>Person1</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:95% "></div>
+             </div>
+           </div>
+           <div class="points"> 195 points</div>
+         </div>
+        <div class="lboard_mem">
+            <div class="img">
+                <img src="v.jpeg" alt="picture_2">
+            </div>
+           <div class="name_bar">
+             <p> <span>2.</span>Person2</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:80% "></div>
+             </div>
+           </div>
+           <div class="points"> 180 points</div>
+         </div>
+        <div class="lboard_mem">
+            <div class="img">
+                <img src="sfcssir.jpeg" alt="picture_3">
+            </div>
+           <div class="name_bar">
+             <p> <span>3.</span>Person3</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:70% "></div>
+             </div>
+           </div>
+           <div class="points"> 165 points</div>
+         </div>
+        <div class="lboard_mem">
+            <div class="img">
+                <img src="daamam.jpeg" alt="picture_4">
+            </div>
+           <div class="name_bar">
+             <p> <span>4.</span>Person4</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:60% "></div>
+             </div>
+           </div>
+           <div class="points"> 155 points</div>
+         </div>
+        <div class="lboard_mem">
+            <div class="img">
+                <img src="v.jpeg" alt="picture_5">
+            </div>
+           <div class="name_bar">
+             <p> <span>5.</span>Person5</p>
+             <div class="bar_wrap">
+                <div class="inner_bar" style="width:50% "></div>
+             </div>
+           </div>
+           <div class="points"> 140 points</div>
+         </div>
+      </div>
+      
+    </div>
+
+
+    
+  </div>
+  
+
+ </body>
+</html>

@@ -1,0 +1,138 @@
+/* .verbal{
+   
+    
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+    display: grid;
+} */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+body{
+   background: linear-gradient(245.59deg, #324265 0%, #384670 28.53%, #153541 75.52%);
+  font-family: 'Permanent Marker', cursive;
+ 
+}
+header
+{
+  position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    /* padding: 33px 9%; */margin-top:30px;
+    background: transparent;
+}
+
+.logo{
+  
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(247, 241, 241);
+    font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
+  padding-left: 2%;
+}
+.navlist{
+    display: flex;/*text in straight line ,home ,contact us */
+}
+ul{
+   text-decoration: none;
+  list-style: none;
+}
+.navlist a{
+    color:white;
+    margin-left: 60px;margin-right:30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration:none;
+    list-style: none;
+    transition: all .55s ease;
+  
+}
+.navlist a:hover{
+    border-bottom:2px solid white;
+}
+.verbal-heading h3{
+    font-family: 'Permanent Marker', cursive;
+    color: #efe6e6;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.verbal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+   
+  margin-top:5%;
+}
+.verbal-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+.verbal-content p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #eee8e8;
+
+}
+.verbal-img{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+@keyframes fadeInUp{
+      0%{
+        opacity: 0;
+        transform: translateY(50px);
+      }   
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+}
+@keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      transform: translateY(-50px);
+    }   
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+.button{
+    display:inline-block;
+  
+    color:white;
+    background: #4d5995;
+    border: 1px solid transparent;
+  margin-top:20px;
+ margin-left: 800px;
+    padding: 12px 30px;
+    /* Line-height: 1.4; */
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
